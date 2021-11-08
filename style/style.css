@@ -1,1 +1,22 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Montserrat";
+}
+
+nav button {
+  color: wheat;
+}
+
+nav #brand {
+  width: 150px;
+}
+
+nav .nav-link {
+  color: #fff;
+  letter-spacing: .05rem;
+  font-size: 1rem;
+}
+
+nav .nav-link:hover {
+  color: #ffc800;
+}
+/*# sourceMappingURL=style.css.map */

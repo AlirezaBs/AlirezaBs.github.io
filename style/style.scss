@@ -1,0 +1,23 @@
+body {
+  font-family: "Montserrat";
+}
+
+nav {
+    button {
+        color: wheat;
+    }
+
+  #brand {
+    width: 150px;
+  }
+
+  .nav-link {
+      color: #fff;
+      letter-spacing: .05rem;
+      font-size: 1rem;
+
+      &:hover {
+          color: #ffc800;
+      }
+  }
+}
