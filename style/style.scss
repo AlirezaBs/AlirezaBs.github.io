@@ -10,7 +10,7 @@ nav {
   }
 
   #brand {
-    width: 190px;
+    width: 200px;
   }
 
   .nav-link {
@@ -23,18 +23,32 @@ nav {
       color: $orange;
     }
   }
+
+  @media (max-width: 992px) {
+    #brand {
+      width: 148px;
+    }
+  }
 }
 
-#main-nav {
+.scrolled-nav {
+  @media (min-width: 992px) {
+    padding: 1rem 0;
+    background-color: #212529;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.myNav {
   padding: 1rem 0;
   background-color: #212529;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
-  @media (min-width: 992px){
+  @media (min-width: 992px) {
     border: none;
     background-color: transparent;
     padding: 1.5rem 0;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 }
 
@@ -73,7 +87,7 @@ nav {
     }
   }
 
-  @media (max-width: 992px){
+  @media (max-width: 992px) {
     padding: 12rem 0 8rem 0;
 
     h3 {
@@ -86,5 +100,45 @@ nav {
     button {
       padding: 12px 22px;
     }
+  }
+}
+
+#services {
+  padding: 7.5rem 0;
+}
+
+#service-title {
+  text-align: center;
+
+  h1 {
+    font-weight: bolder;
+  }
+  p {
+    font-style: italic;
+    padding-top: 0.89rem;
+    font-family: "Roboto Slab";
+  }
+}
+
+#service-cards {
+  #icons {
+    margin: 0 auto;
+    background-color: $orange;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 100%;
+    position: relative;
+  }
+  i {
+    font-size: 3.7rem;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 18%;
+  }
+
+  p {
+    font-style: italic;
+    font-family: "Roboto Slab";
   }
 }
