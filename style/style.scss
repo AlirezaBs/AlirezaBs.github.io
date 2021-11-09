@@ -1,23 +1,90 @@
-body {
+$orange: #ffc800;
+
+* {
   font-family: "Montserrat";
 }
 
 nav {
-    button {
-        color: wheat;
-    }
+  button {
+    color: wheat;
+  }
 
   #brand {
-    width: 150px;
+    width: 190px;
   }
 
   .nav-link {
-      color: #fff;
-      letter-spacing: .05rem;
-      font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+    transition: all 0.5s;
 
-      &:hover {
-          color: #ffc800;
-      }
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+#main-nav {
+  padding: 1rem 0;
+  background-color: #212529;
+  transition: all .4s ease-in-out;
+
+  @media (min-width: 992px){
+    border: none;
+    background-color: transparent;
+    padding: 1.5rem 0;
+    transition: all .4s ease-in-out;
+  }
+}
+
+#header {
+  padding: 15rem 0 10rem 0;
+  background-image: url("../images/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center center;
+
+  h3 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    font-family: "Roboto Slab";
+    font-style: italic;
+    letter-spacing: 0.06rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+  }
+
+  button {
+    background-color: $orange;
+    color: white;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: #c09806;
+    }
+  }
+
+  @media (max-width: 992px){
+    padding: 12rem 0 8rem 0;
+
+    h3 {
+      font-size: 1.6rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      line-height: 2.9rem;
+    }
+    button {
+      padding: 12px 22px;
+    }
   }
 }
