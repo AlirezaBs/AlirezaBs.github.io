@@ -28,13 +28,11 @@ nav .nav-link:hover {
   }
 }
 
-@media (min-width: 992px) {
-  .scrolled-nav {
-    padding: 1rem 0;
-    background-color: #212529;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-  }
+.scrolled-nav {
+  padding: 0.8rem 0;
+  background-color: #212529;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .myNav {
@@ -111,15 +109,16 @@ nav .nav-link:hover {
   padding: 7.5rem 0;
 }
 
-#service-title {
+.section-title {
   text-align: center;
 }
 
-#service-title h1 {
+.section-title h1 {
   font-weight: bolder;
+  font-size: 2.5rem;
 }
 
-#service-title p {
+.section-title p {
   font-style: italic;
   padding-top: 0.89rem;
   font-family: "Roboto Slab";
@@ -145,5 +144,73 @@ nav .nav-link:hover {
 #service-cards p {
   font-style: italic;
   font-family: "Roboto Slab";
+}
+
+.portfolio {
+  padding: 7.5rem 0;
+  background-color: #f8f9fa;
+}
+
+.portfolio-item .text-card {
+  text-align: center;
+}
+
+.portfolio-item .text-card h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.portfolio-item .text-card p {
+  font-style: italic;
+  font-family: "Roboto Slab";
+}
+
+.portfolio-item a {
+  position: relative;
+}
+
+.portfolio-item .portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 200, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.portfolio-item .portfolio-hover i {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.portfolio-item .portfolio-hover:hover {
+  opacity: 1;
+}
+
+.modal #pp {
+  font-family: "Roboto Slab";
+  font-style: italic;
+}
+
+.modal .container {
+  text-align: center;
+}
+
+.modal .close-modal {
+  margin: 1.1rem 1.1rem 1.1rem auto;
+  width: 2.1rem;
+  height: 2.1rem;
+  background-color: transparent;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
