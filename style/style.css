@@ -213,4 +213,69 @@ nav .nav-link:hover {
   background-color: transparent;
   cursor: pointer;
 }
+
+.about {
+  padding: 7.5rem 0;
+}
+
+.timeline h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.timeline h1 {
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.timeline p {
+  font-style: italic;
+  font-family: "Roboto Slab";
+  line-height: 2rem;
+}
+
+.about-image {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.about-image img {
+  display: block;
+  margin: 0 auto auto auto;
+  border-radius: 50%;
+  width: 58%;
+  border: 9px solid #e9ecef;
+}
+
+@media (max-width: 992px) {
+  .about-image img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image img {
+    width: 100%;
+  }
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-container .line {
+  position: absolute;
+  top: 0%;
+  right: 49.9%;
+  width: 4px;
+  height: 80%;
+  background-color: #e9ecef;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .timeline-container .line {
+    right: 87%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -205,3 +205,61 @@ nav {
     cursor: pointer;
   }
 }
+
+.about {
+  padding: 7.5rem 0;
+}
+
+.timeline {
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+  }
+  p {
+    font-style: italic;
+    font-family: "Roboto Slab";
+    line-height: 2rem;
+  }
+  
+}
+
+.about-image {
+  align-self: flex-start;
+  img {
+    display: block;
+    margin: 0 auto auto auto;
+    border-radius: 50%;
+    width: 58%;
+    border: 9px solid #e9ecef;
+
+    @media (max-width: 992px) {
+      width: 80%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.timeline-container {
+  position: relative;
+
+  .line {
+    position: absolute;
+    top: 0%;
+    right: 49.9%;
+    width: 4px;
+    height: 80%;
+    background-color: #e9ecef;
+    z-index: -1;
+
+    @media (max-width: 768px){
+      right: 87%;
+    }
+  }
+}
