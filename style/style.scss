@@ -211,7 +211,6 @@ nav {
 }
 
 .timeline {
-
   h2 {
     font-size: 1.2rem;
     font-weight: bold;
@@ -225,7 +224,6 @@ nav {
     font-family: "Roboto Slab";
     line-height: 2rem;
   }
-  
 }
 
 .about-image {
@@ -258,8 +256,49 @@ nav {
     background-color: #e9ecef;
     z-index: -1;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       right: 87%;
     }
+  }
+}
+
+.team {
+  padding: 7.5rem 0;
+  background-color: #f8f9fa;
+}
+
+.team-member {
+  text-align: center;
+  img {
+    width: 15rem;
+    border-radius: 50%;
+    margin-bottom: 1.3rem;
+    border: 8px solid #dbdee0;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  p {
+    font-family: "Roboto Slab";
+    margin-top: 0;
+  }
+  a {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+#team-p {
+  font-family: "Roboto Slab";
+}
+
+.logos {
+  padding: 2.4rem;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 12rem;
   }
 }
