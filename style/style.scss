@@ -302,3 +302,41 @@ nav {
     width: 12rem;
   }
 }
+
+#contact {
+  background-color: #212529;
+  padding: 7rem 0;
+}
+
+#contact-head {
+  color: #fff;
+}
+
+.contact-form {
+  label {
+    color: #e9ecef;
+  }
+
+  #submit-form {
+    background-color: $orange;
+    color: #fff;
+    &:focus {
+      border-color: $orange;
+      box-shadow: inset 0 1px 1px rgba(233, 205, 45, 0.075),
+        0 0 8px rgba(251, 255, 19, 0.6);
+    }
+  }
+
+  .form-control:focus {
+    border-color: $orange;
+    box-shadow: inset 0 1px 1px rgba(233, 205, 45, 0.075),
+      0 0 8px rgba(251, 255, 19, 0.6);
+  }
+}
+
+.my-iframe {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
