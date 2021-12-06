@@ -33,12 +33,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- internal css -->
     <link rel="stylesheet" href="./style/style.css" />
+    <!-- scroll AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body id="top-page">
     <!-- navBar -->
-    <nav id="main-nav" class="navbar navbar-expand-lg fixed-top myNav">
+    <nav
+      id="main-nav"
+      class="navbar reveal-nav navbar-expand-lg fixed-top myNav"
+    >
       <div class="container">
         <a class="navbar-brand" href="#page-top"
           ><img id="brand" src="./images/img/navbar-logo.svg" alt=""
@@ -90,9 +96,13 @@
         "
       >
         <div class="d-block text-center">
-          <h3 class="pt-lg-5">Welcome To Our Studio!</h3>
-          <h1 class="py-4">IT'S NICE TO MEET YOU</h1>
-          <button class="btn mt-lg-4 mb-3">TELL ME MORE</button>
+          <h3 class="pt-lg-5" data-aos="zoom-in-down">
+            Welcome To Our Studio!
+          </h3>
+          <h1 class="py-4" data-aos="zoom-in">IT'S NICE TO MEET YOU</h1>
+          <button class="btn mt-lg-4 mb-3" data-aos="zoom-in-up">
+            TELL ME MORE
+          </button>
         </div>
       </div>
     </header>
@@ -101,12 +111,16 @@
       <div class="container">
         <div class="row">
           <div class="col-12 section-title">
-            <h1>SERVICES</h1>
+            <h1 data-aos="flip-right">SERVICES</h1>
             <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
         </div>
         <div class="row mt-5">
-          <div id="service-cards" class="text-center col-md-4">
+          <div
+            id="service-cards"
+            class="text-center col-md-4"
+            data-aos="fade-right"
+          >
             <div id="icons"><i class="fas fa-shopping-cart"></i></div>
             <h4 class="fw-bold my-4">E-Commerce</h4>
             <p class="text-muted">
@@ -115,7 +129,7 @@
               impedit.
             </p>
           </div>
-          <div id="service-cards" class="text-center col-md-4">
+          <div id="service-cards" class="text-center col-md-4" data-aos="fade">
             <div id="icons"><i class="fa fa-laptop"></i></div>
             <h4 class="fw-bold my-4">Responsive Design</h4>
             <p class="text-muted">
@@ -124,7 +138,11 @@
               impedit.
             </p>
           </div>
-          <div id="service-cards" class="text-center col-md-4">
+          <div
+            id="service-cards"
+            class="text-center col-md-4"
+            data-aos="fade-left"
+          >
             <div id="icons"><i class="fa fa-key"></i></div>
             <h4 class="fw-bold my-4">Web Security</h4>
             <p class="text-muted">
@@ -141,12 +159,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12 section-title">
-            <h1>PORTFOLIO</h1>
+            <h1 data-aos="flip-right">PORTFOLIO</h1>
             <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
         </div>
         <div class="row pt-5 g-4">
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
             <div class="card border-0 shadow-sm">
               <a
                 href="#portfolioModal-1"
@@ -166,7 +184,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
             <div class="card border-0 shadow-sm">
               <a
                 href="#portfolioModal-2"
@@ -186,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
             <div class="card border-0 shadow-sm">
               <a
                 href="#portfolioModal-3"
@@ -206,7 +224,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
             <div class="card border-0 shadow-sm">
               <a
                 href="#portfolioModal-4"
@@ -226,7 +244,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
             <div class="card border-0 shadow-sm">
               <a
                 href="#portfolioModal-5"
@@ -246,7 +264,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-sm-6 portfolio-item" data-aos="fade-up">
             <div class="card border-0 shadow-sm">
               <a
                 href="#portfolioModal-6"
@@ -593,7 +611,7 @@
       <div class="container-lg">
         <div class="row">
           <div class="col section-title">
-            <h1>ABOUT</h1>
+            <h1 data-aos="flip-right">ABOUT</h1>
             <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
         </div>
@@ -610,6 +628,7 @@
               col-9
               text-md-start text-end text-md-end
             "
+            data-aos="fade-right"
           >
             <h2>2009-2011</h2>
             <h1>Our Humble Beginnings</h1>
@@ -632,7 +651,7 @@
           <div class="col-md-3 col-3 about-image">
             <img src="./images/img/about/2.jpg" class="img-fluid" alt="" />
           </div>
-          <div class="col-md-4 col-9 text-end text-md-end">
+          <div class="col-md-4 col-9 text-end text-md-end" data-aos="fade-left">
             <h2>March 2011</h2>
             <h1>An Agency is Born</h1>
             <p class="text-muted">
@@ -653,6 +672,7 @@
               col-9
               text-md-start text-end text-md-end
             "
+            data-aos="fade-right"
           >
             <h2>December 2015</h2>
             <h1>Transition to Full Service</h1>
@@ -675,7 +695,7 @@
           <div class="col-md-3 col-3 about-image">
             <img src="./images/img/about/4.jpg" class="img-fluid" alt="" />
           </div>
-          <div class="col-md-4 col-9 text-end text-md-end">
+          <div class="col-md-4 col-9 text-end text-md-end" data-aos="fade-left">
             <h2>July 2020</h2>
             <h1>Phase Two Expansion</h1>
             <p class="text-muted">
@@ -693,13 +713,13 @@
       <div class="container">
         <div class="row">
           <div class="col-12 section-title">
-            <h1>OUR AMAZING TEAM</h1>
+            <h1 data-aos="flip-right">OUR AMAZING TEAM</h1>
             <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-lg-4 team-member">
-            <img src="./images/img/team/1.jpg" class="img-fluid" alt="" />
+            <img src="./images/img/team/1.jpg" class="img-fluid" alt="" data-aos="zoom-out"/>
             <h3>Parveen Anand</h3>
             <p class="text-muted">Lead Designer</p>
             <a class="btn btn-dark btn-social mx-2" href="#!"
@@ -712,7 +732,7 @@
             ></a>
           </div>
           <div class="col-lg-4 team-member mt-5 mt-lg-0">
-            <img src="./images/img/team/2.jpg" class="img-fluid" alt="" />
+            <img src="./images/img/team/2.jpg" class="img-fluid" alt="" data-aos="zoom-out"/>
             <h3>Diana Petersen</h3>
             <p class="text-muted">Lead Marketer</p>
             <a class="btn btn-dark btn-social mx-2" href="#!"
@@ -725,7 +745,7 @@
             ></a>
           </div>
           <div class="col-lg-4 team-member mt-5 mt-lg-0">
-            <img src="./images/img/team/3.jpg" class="img-fluid" alt="" />
+            <img src="./images/img/team/3.jpg" class="img-fluid" alt="" data-aos="zoom-out"/>
             <h3>Larry Parker</h3>
             <p class="text-muted">Lead Developer</p>
             <a class="btn btn-dark btn-social mx-2" href="#!"
@@ -754,7 +774,7 @@
       <div class="container">
         <div class="row mb-4">
           <div class="col-12 section-title">
-            <h1 id="contact-head">CONTACT US</h1>
+            <h1 id="contact-head" data-aos="flip-right">CONTACT US</h1>
             <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
         </div>
@@ -805,7 +825,9 @@
                   Agree to terms and conditions
                 </label>
               </div>
-              <button id="submit-form" class="btn mt-3" type="submit">Submit</button>
+              <button id="submit-form" class="btn mt-3" type="submit">
+                Submit
+              </button>
             </form>
           </div>
           <div class="col-md-7">
@@ -849,6 +871,11 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS scripts and data -->
     <script src="./script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
