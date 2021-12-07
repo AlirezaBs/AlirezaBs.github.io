@@ -2,6 +2,10 @@
   font-family: "Montserrat";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav button {
   color: wheat;
 }
@@ -281,7 +285,7 @@ nav .nav-link:hover {
 
 .team {
   padding: 7.5rem 0;
-  background-color: #f8f9fa;
+  background-color: #eceef0;
 }
 
 .team-member {
@@ -315,7 +319,7 @@ nav .nav-link:hover {
 }
 
 .logos {
-  padding: 2.4rem;
+  padding: 2.4rem 0;
 }
 
 .logos img {
@@ -352,16 +356,5 @@ nav .nav-link:hover {
   border-color: #ffc800;
   -webkit-box-shadow: inset 0 1px 1px rgba(233, 205, 45, 0.075), 0 0 8px rgba(251, 255, 19, 0.6);
           box-shadow: inset 0 1px 1px rgba(233, 205, 45, 0.075), 0 0 8px rgba(251, 255, 19, 0.6);
-}
-
-.my-iframe {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
